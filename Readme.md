@@ -115,7 +115,7 @@ var filesToCache = [
   '/index.html',
   '/js/index.js',
   '/css/index.css',
-  '/style.css'
+  '/styles.css'
 ];
 
 /* Install the service worker */
@@ -221,7 +221,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 //serve static file (index.html, images, css)
 app.use(express.static(__dirname + '/views'));
- })
+ 
 
 
 app.get('/mfp/*', function(req, res) {
